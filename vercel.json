@@ -5,10 +5,6 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "functions": {
-    "api/**/*.js": {
-      "maxDuration": 15,
-      "memory": 1024
-    },
     "api/overpass.js": {
       "maxDuration": 30,
       "memory": 1024
@@ -17,26 +13,39 @@
       "maxDuration": 20,
       "memory": 1024
     },
+    "api/cctv/*.js": {
+      "maxDuration": 15,
+      "memory": 1024,
+      "includeFiles": "config/**"
+    },
     "api/cctv/**/*.js": {
       "maxDuration": 15,
       "memory": 1024,
       "includeFiles": "config/**"
     },
     "api/celestrak/*.js": {
-      "maxDuration": 20
+      "maxDuration": 20,
+      "memory": 1024
     },
     "api/launches.js": {
-      "maxDuration": 20
+      "maxDuration": 20,
+      "memory": 1024
     },
     "api/firms/*.js": {
       "maxDuration": 60,
       "memory": 1024
     },
     "api/terrain/heights.js": {
-      "maxDuration": 30
+      "maxDuration": 30,
+      "memory": 1024
     },
     "api/radio/stations.js": {
-      "maxDuration": 30
+      "maxDuration": 30,
+      "memory": 1024
+    },
+    "api/**/*.js": {
+      "maxDuration": 15,
+      "memory": 1024
     }
   }
 }
