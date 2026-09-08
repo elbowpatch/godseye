@@ -1,0 +1,17 @@
+{
+  "name": "gods-eye-view-ais-relay",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Always-on AIS live-vessel relay for God's Eye View on Vercel. Deploy separately (Fly.io/Railway/VPS) and point the Vercel deployment's AIS_RELAY_URL at it.",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.21.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
